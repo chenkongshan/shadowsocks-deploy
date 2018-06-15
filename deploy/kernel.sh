@@ -12,7 +12,7 @@ if [ "$sys_kernel" == $NEED_KERNEL ]; then
 fi
 echo "更换内核需要一段时间，请耐心等待..."
 #更换内核
-rpm -ivh https://gitee.com/chenkongshan/shadowsocks-deploy/raw/master/resources/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
+rpm -ivh https://raw.githubusercontent.com/chenkongshan/shadowsocks-deploy/master/resources/kernel-3.10.0-229.1.2.el7.x86_64.rpm --force
 echo "更换内核完成..."
 #设置启动内核
 grub2-set-default `awk -F\' '$1=="menuentry " {print i++ " : " $2}' /etc/grub2.cfg | grep '(3.10.0-229.1.2.el7.x86_64) 7 (Core)'|awk '{print $1}'`

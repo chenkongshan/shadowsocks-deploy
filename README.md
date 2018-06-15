@@ -28,12 +28,12 @@
 * deploy.sh：这个脚本是用来安装shadowsocks服务，脚本会让输入服务器IP、使用端口号、服务密码等信息，按照提示填写即可，
     这个脚本执行完成以后，即可使用shaodowsocks服务了。
 ### 1、更新系统内核
-    wget https://gitee.com/chenkongshan/shadowsocks-deploy/raw/master/deploy/kernel.sh && bash kernel.sh
+    wget https://raw.githubusercontent.com/chenkongshan/shadowsocks-deploy/master/deploy/kernel.sh && bash kernel.sh
 这个脚本执行完成以后会重启系统。
 ### 2、安装serverspeeder锐速
-    wget https://gitee.com/chenkongshan/shadowsocks-deploy/raw/master/deploy/speed.sh && bash speed.sh
+    wget https://raw.githubusercontent.com/chenkongshan/shadowsocks-deploy/master/deploy/speed.sh && bash speed.sh
 ### 3、安装shadowsocks
-    wget https://gitee.com/chenkongshan/shadowsocks-deploy/raw/master/deploy/deploy.sh && bash deploy.sh
+    wget https://raw.githubusercontent.com/chenkongshan/shadowsocks-deploy/master/deploy/deploy.sh && bash deploy.sh
 这一步执行完成以后，界面会显示主要的服务器地址、端口号、密码等信息，这个记录下来，在客户端配置时会用到。
 ### 4、额外说明
 第一步和第二步主要是用来安装serverspeeder锐速的，用于提升网络质量，如果不需要的话这两步是可以不执行的，
@@ -42,7 +42,7 @@
 [内核与锐速匹配参考](https://github.com/0oVicero0/serverSpeeder_kernel)。
 ## 四、客户端使用
 服务部署完成以后就可以使用了，我这边提供一个Windows的客户端，其他的MAC、IOS、安卓客户端按照自己的需求搜索下载。
-[Windows客户端](https://gitee.com/chenkongshan/shadowsocks-deploy/raw/master/client/Shadowsocks-4.0.6.zip)
+[Windows客户端](https://raw.githubusercontent.com/chenkongshan/shadowsocks-deploy/master/client/Shadowsocks-4.0.6.zip)
    
 ## 最后
 到此就可以happy的上网了。希望大家能科学的上网。
